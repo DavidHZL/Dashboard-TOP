@@ -6,12 +6,12 @@
 .container  {
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1.5fr 6fr;
     grid-template-rows: 150px 1fr;
 }
 
 .header {
-    background-color: red;
+    background-color: white;
     grid-column: 2 / 4;
     display: grid;
     grid-template-columns: 1fr;
@@ -19,27 +19,96 @@
 }
 
 .nav {
-    
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
+
+.search-section {
+    display: grid;
+    grid-template-columns: 40px 2fr;
+    margin-left: 25px;
+    align-items: center;
+}
+
+#search-box {
+    width: 600px;
+    height: 25px;
+    background-color: lightgrey;
+    border-radius: 1rem;
+}
+
+.header-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    width: 250px;
+    margin-left: 80px;
+}
+
 .profile {
-   
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.display-profile {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    margin-left: 25px;
+    align-items: center;
+}
+.control-buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 500px;
+}
+
+.ctrlBtn {
+    background-color: lightblue;
+    border-radius: 2rem;
+    height: 40px;
+    width: 130px
+}
+
+.profile-name{
+    text-align:left;
+    font-size: 25px;
+}
+.greeting {
+    font-size: 15px;
 }
 
 .sidebar {
     grid-row: 1 / 3;
-    height: 100vh;
+    height: 105vh;
     display: grid;
     grid-template-rows: 1fr 2fr 2fr;
     background-color: lightblue;
 }
 
-.tabs {
+.logo {
     display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    margin-left: 25px;
+    margin-bottom: 90px;
+    text-align: left;
+    font-size: 2rem;;
 }
 
-.support {
-    margin-top: 40px;
+.tabs, .support {
     display: grid;
+    grid-template-columns: 25px 1fr;
+    text-align: left;
+    gap: 25px;
+    font-size: 1rem;
+    margin-left: 25px;
+}
+
+.tabs {
+    height: 250px;
+}
+.support {
+    height: 100px;
 }
 
 .content {
@@ -51,14 +120,14 @@
 .projects {
     display: grid;
     gap: 15px;
-    padding: 15px;
+    padding: 25px;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
-    grid-template-rows: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: 25px repeat(3, minmax(200px, 1fr));
 }
 
 .alt-info {
     display:grid;
-    row-gap: 15px;
+    grid-template-rows: 1fr 1fr;
     padding: 20px;
 }
 
@@ -68,4 +137,23 @@
 
 .alt-info-card {
     background-color: white;
+    height: 300px;
+    
+}
+
+.projects-title {
+    font-size: 1rem;
+    text-align: left;
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.announcements, .trending {
+    display: grid;
+    grid-template-rows: 25px 1fr;
+    margin-top: 17px;
+}
+
+.alt-info-title{
+    font-size: 1rem;
+    text-align: left;
 }
