@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    background-color: lightblue;
+}
+
 .container  {
     text-align: center;
     display: grid;
@@ -78,10 +82,10 @@
 }
 
 .sidebar {
-    grid-row: 1 / 3;
-    height: 105vh;
+    grid-row: 1 / 4;
+    height: 110vh;
     display: grid;
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr ;
     background-color: lightblue;
 }
 
@@ -131,14 +135,36 @@
     padding: 20px;
 }
 
-.card {
+.card, .alt-info-card {
     background-color: white;
+    border-radius: 1rem;
+}
+
+.card{
+    max-width:500px;
+    display:grid;
+    grid-template-columns: 40px 1fr;
 }
 
 .alt-info-card {
-    background-color: white;
-    height: 300px;
-    
+    max-height: 300px;
+    min-width: 300px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+
+.title {
+    font-size:1.2rem;
+    text-align: left;
+    padding: 25px;
+}
+
+.description {
+    font-size: 1rem;
+    text-align: left;
+    padding: 0 25px;
 }
 
 .projects-title {
@@ -149,11 +175,48 @@
 
 .announcements, .trending {
     display: grid;
-    grid-template-rows: 25px 1fr;
-    margin-top: 17px;
+    grid-template-rows: 30px 1fr;
+    margin-top: 15px;
+}
+
+.announcement{
+    display: grid;
+    padding: 5px 15px;
+}
+
+.announce-title {
+    font-size: 0.9rem;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.announce-description {
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+.alt-info-card div:nth-child(-n + 3){
+    border-bottom: 2px solid lightgrey;
+    margin: 0 15px;;
 }
 
 .alt-info-title{
     font-size: 1rem;
     text-align: left;
+}
+
+.colored-bar{
+    width:20px;
+    height: 220px;
+    background-color: gold;
+    border-radius: 10px;
+}
+
+.icon-set {
+    display: grid;
+    gap: 10px;
+    grid-template-columns:30px 30px 30px;
+    padding: 10px;
+    justify-content: right;
+    align-content: baseline;
 }
