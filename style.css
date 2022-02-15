@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: lightblue;
+    background-color: #14B8A6;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container  {
@@ -47,6 +50,7 @@ body {
     align-items: center;
     width: 250px;
     margin-left: 80px;
+    font-weight: 600;
 }
 
 .profile {
@@ -59,6 +63,7 @@ body {
     grid-template-columns: 100px 1fr;
     margin-left: 25px;
     align-items: center;
+    font-weight: 600;
 }
 .control-buttons{
     display: grid;
@@ -67,10 +72,11 @@ body {
 }
 
 .ctrlBtn {
-    background-color: lightblue;
+    background-color: #14B8A6;
     border-radius: 2rem;
     height: 40px;
-    width: 130px
+    width: 130px;
+    color: white;
 }
 
 .profile-name{
@@ -86,7 +92,8 @@ body {
     height: 110vh;
     display: grid;
     grid-template-rows: 1fr 2fr 2fr ;
-    background-color: lightblue;
+    background-color: #14B8A6;
+    color: white;
 }
 
 .logo {
@@ -146,14 +153,16 @@ body {
     grid-template-columns: 40px 1fr;
 }
 
+.card-content {
+    display: grid;
+}
+
 .alt-info-card {
     max-height: 300px;
     min-width: 300px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
 }
-
-
 
 .title {
     font-size:1.2rem;
@@ -195,9 +204,18 @@ body {
     font-size: 0.8rem;
 }
 
-.alt-info-card div:nth-child(-n + 3){
+.trending-post {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    text-align: left;
+    margin-right: auto;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.announcements div:nth-child(-n + 3){
     border-bottom: 2px solid lightgrey;
-    margin: 0 15px;;
 }
 
 .alt-info-title{
@@ -208,7 +226,7 @@ body {
 .colored-bar{
     width:20px;
     height: 220px;
-    background-color: gold;
+    background-color: #059669;
     border-radius: 10px;
 }
 
@@ -219,4 +237,8 @@ body {
     padding: 10px;
     justify-content: right;
     align-content: baseline;
+}
+
+.profileTag {
+    font-weight: 600;
 }
